@@ -1,0 +1,28 @@
+{
+  "name": "hexo-next-minivaline",
+  "version": "1.1.0",
+  "description": "A MiniValine plugin for Hexo NexT theme.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MiniValine/hexo-next-minivaline.git"
+  },
+  "keywords": [
+    "Hexo",
+    "Next",
+	"MiniValine",
+    "Simple Comment",
+    "Comment System",
+    "Based on Leancloud",
+    "Minimalist"
+  ],
+  "author": "MHuiG",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/MiniValine/hexo-next-minivaline/issues"
+  },
+  "homepage": "https://github.com/MiniValine/hexo-next-minivaline#readme"
+}
