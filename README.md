@@ -1,6 +1,8 @@
 # Hexo Next MiniValine
+[![version](https://img.shields.io/github/release/MiniValine/hexo-next-minivaline.svg?style=flat-square)](https://github.com/MiniValine/hexo-next-minivaline/releases) [![GPL Licence](https://cdn.jsdelivr.net/gh/MHuiG/imgbed/github/gpl.svg)](https://opensource.org/licenses/GPL-3.0/) 
 
-A MiniValine plugin for Hexo NexT theme.
+>A MiniValine plugin for Hexo NexT theme.
+------------------------------
 
 ## Installation
 
@@ -29,3 +31,7 @@ minivaline:
 ```
 
 - `cdn` CDN of the required files. Leave it blank if you want to directly load from server side.
+
+## License
+
+[GPL-3.0](https://github.com/MiniValine/hexo-next-minivaline/blob/master/LICENSE)
