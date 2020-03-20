@@ -35,7 +35,6 @@ function getScript(url, callback, condition) {
 		}
 	  };
 	  script.src = url;
-	  script.defer = true;
 	  document.head.appendChild(script);
 	}
 }

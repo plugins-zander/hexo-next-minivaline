@@ -24,7 +24,8 @@ minivaline:
   # If you want everyone visiting your site to see a uniform language, you can set a force language value
   # Available values: en | es-ES | fr | ru | zh-CN | zh-TW
   language:
-  cdn: 
+  lazyload: false
+  cdn: #https://cdn.jsdelivr.net/gh/MiniValine/MiniValine/dist/MiniValine.min.js
 ```
 
 - `cdn` CDN of the required files. Leave it blank if you want to directly load from server side.
