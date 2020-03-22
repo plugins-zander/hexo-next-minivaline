@@ -3,6 +3,10 @@
 
 >A MiniValine plugin for Hexo NexT theme.
 ------------------------------
+## Introduction
+
+Get more information about [MiniValine](https://github.com/MiniValine/MiniValine)
+
 
 ## Installation
 
