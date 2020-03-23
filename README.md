@@ -1,12 +1,15 @@
 # Hexo Next MiniValine
-[![version](https://img.shields.io/github/release/MiniValine/hexo-next-minivaline.svg?style=flat-square)](https://github.com/MiniValine/hexo-next-minivaline/releases) [![GPL Licence](https://cdn.jsdelivr.net/gh/MHuiG/imgbed/github/gpl.svg)](https://opensource.org/licenses/GPL-3.0/) 
+[![version](https://img.shields.io/github/release/MiniValine/hexo-next-minivaline.svg?style=flat-square)](https://github.com/MiniValine/hexo-next-minivaline/releases)
+[![GPL Licence](https://cdn.jsdelivr.net/gh/MHuiG/imgbed/github/gpl.svg)](https://opensource.org/licenses/GPL-3.0/) 
+<!--
+[![npm downloads](https://img.shields.io/npm/dm/hexo-next-minivaline.svg?style=flat-square)](https://www.npmjs.com/package/hexo-next-minivaline)
+-->
 
 >A MiniValine plugin for Hexo NexT theme.
 ------------------------------
 ## Introduction
 
 Get more information about [MiniValine](https://github.com/MiniValine/MiniValine)
-
 
 ## Installation
 
@@ -31,7 +34,7 @@ minivaline:
   # Available values: en | es-ES | fr | ru | zh-CN | zh-TW
   language:
   lazyload: false
-  cdn: # https://cdn.jsdelivr.net/gh/MiniValine/MiniValine/dist/MiniValine.min.js
+  cdn: # https://cdn.jsdelivr.net/npm/minivaline/dist/MiniValine.min.js
 ```
 
 - `cdn` CDN of the required files. Leave it blank if you want to directly load from server side.
