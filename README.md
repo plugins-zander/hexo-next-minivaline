@@ -29,7 +29,8 @@ minivaline:
   math: true # Support MathJax.
   # MiniValine's display language depends on user's browser or system environment
   # If you want everyone visiting your site to see a uniform language, you can set a force language value
-  # Available values: en | es-ES | fr | ru | zh-CN | zh-TW
+  # Available values: en  | zh-CN | (and many more)
+  # More i18n info: https://github.com/MiniValine/minivaline-i18n
   language:
   lazyload: false
   cdn: # https://cdn.jsdelivr.net/npm/minivaline/dist/MiniValine.min.js
