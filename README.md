@@ -27,6 +27,7 @@ minivaline:
   pageSize: 6 # Pagination size
   adminEmailMd5: # The MD5 of Admin Email to show Admin Flag.
   math: true # Support MathJax.
+  md: true # Support Markdown.
   # MiniValine's display language depends on user's browser or system environment
   # If you want everyone visiting your site to see a uniform language, you can set a force language value
   # Available values: en  | zh-CN | (and many more)

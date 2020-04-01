@@ -15,7 +15,8 @@ loadComments(document.querySelector('#minivaline-comments'), function(){
         lang: '{{ config.minivaline.language }}',
       {%- endif %}
       adminEmailMd5: '{{ config.minivaline.adminEmailMd5 }}',
-      math: {{ config.minivaline.math }} || false,
+      math: {{ config.minivaline.math }} || true,
+      md: {{ config.minivaline.md }} || true,
       maxNest: {{ config.minivaline.maxNest }} || 3,
       pageSize: {{ config.minivaline.pageSize }} || 6,
 	  pathname: '/{{ page.path }}'
