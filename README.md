@@ -34,7 +34,7 @@ minivaline:
   # More i18n info: https://github.com/MiniValine/minivaline-i18n
   language:
   lazyload: false
-  cdn: # https://cdn.jsdelivr.net/npm/minivaline/dist/MiniValine.min.js
+  cdn: # https://unpkg.com/minivaline/dist/MiniValine.min.js
 ```
 
 - `cdn` CDN of the required files. Leave it blank if you want to directly load from server side.
