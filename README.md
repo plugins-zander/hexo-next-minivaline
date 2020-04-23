@@ -39,6 +39,8 @@ minivaline:
 
 - `cdn` CDN of the required files. Leave it blank if you want to directly load from server side.
 
+## **[MiniValine FAQs](https://github.com/MiniValine/MiniValine/blob/master/.github/FAQ.md)**
+
 ## Feedback
 
 * Visit the [AWESOME MiniValine](https://github.com/MiniValine/AWESOME-MiniValine) list to share plugins and tutorials with other users.
