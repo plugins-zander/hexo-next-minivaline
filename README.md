@@ -12,7 +12,7 @@ Get more information about [MiniValine](https://github.com/MiniValine/MiniValine
 ## Installation
 
 ``` bash
-npm install hexo-next-minivaline
+npm install hexo-next-minivaline --save
 ```
 
 ## Configuration
