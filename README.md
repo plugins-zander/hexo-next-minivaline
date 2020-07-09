@@ -28,7 +28,6 @@ minivaline:
   md: true # Support Markdown.
   enableQQ: false # Enable QQ avatar API.
   NoRecordIP: false # Do not record commenter IP.
-  visitor: true # Article reading statistics.
   maxNest: 6 # Sub-comment maximum nesting depth.
   pageSize: 6 # Pagination size.
   adminEmailMd5: de8a7aa53d07e6b6bceb45c64027763d # The MD5 of Admin Email to show Admin Flag.[ Just Only DesertsP Style mode]
