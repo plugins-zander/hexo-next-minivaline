@@ -1,5 +1,5 @@
 {%- if page.comments %}
-{%- set minivaline_uri = config.minivaline.cdn or 'https://cdn.jsdelivr.net/npm/minivaline@2/dist/MiniValine.min.js' %}
+{%- set minivaline_uri = config.minivaline.cdn or 'https://cdn.jsdelivr.net/npm/minivaline@4/dist/MiniValine.min.js' %}
 {%- set emoticonUrl = config.minivaline.emoticonUrl %}
 {%- set tagMeta = config.minivaline.tagMeta %}
 {%- set master = config.minivaline.master %}
@@ -28,7 +28,6 @@ loadComments(document.querySelector('#minivaline-comments'), function(){
 			md: {{ config.minivaline.md }},
 			enableQQ: {{ config.minivaline.enableQQ }},
 			NoRecordIP: {{ config.minivaline.NoRecordIP }},
-			visitor: {{ config.minivaline.visitor }},
 			maxNest: {{ config.minivaline.maxNest }},
 			pageSize: {{ config.minivaline.pageSize }},
 			serverURLs: '{{ config.minivaline.serverURLs }}',

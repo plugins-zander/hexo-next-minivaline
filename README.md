@@ -34,7 +34,7 @@ minivaline:
   tagMeta: # The String Array of Words to show Flag.[ Just Only xCss Style mode]
     - 管理员
     - 小伙伴
-    - 访客
+    - 新朋友
   master: # The MD5 String Array of master Email to show master Flag.[ Just Only xCss Style mode]
     - de8a7aa53d07e6b6bceb45c64027763d
   friends: # The MD5 String Array of friends Email to show friends Flag. [ Just Only xCss Style mode]
@@ -57,7 +57,7 @@ minivaline:
     - https://cdn.jsdelivr.net/gh/MiniValine/twemoji@latest
     - https://cdn.jsdelivr.net/gh/MiniValine/weibo@latest
   lazyload: false
-  cdn: https://cdn.jsdelivr.net/npm/minivaline@2/dist/MiniValine.min.js
+  cdn: https://cdn.jsdelivr.net/npm/minivaline@4/dist/MiniValine.min.js
 ```
 
 - `cdn` CDN of the required files. Leave it blank if you want to directly load from server side.
