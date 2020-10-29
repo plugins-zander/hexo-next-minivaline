@@ -15,8 +15,15 @@ Get more information about [MiniValine](https://github.com/MiniValine/MiniValine
 npm install hexo-next-minivaline@3 --save
 ```
 
+> [Use Latest release](https://github.com/MiniValine/hexo-next-minivaline/releases/latest)
+> or Beta `npm install --save  git+https://github.com/MiniValine/hexo-next-minivaline.git#master `
+
 ## Configuration
+
 In **Hexo** `_config.yml`:
+
+> More Options https://github.com/MiniValine/MiniValine#options
+
 ```yml
 minivaline:
   enable: true
