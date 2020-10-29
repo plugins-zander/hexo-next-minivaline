@@ -1,5 +1,4 @@
-# Hexo Next MiniValine Version 3.0
-[![version](https://img.shields.io/github/release/MiniValine/hexo-next-minivaline.svg?style=flat-square)](https://github.com/MiniValine/hexo-next-minivaline/releases)
+# Hexo Next MiniValine Version 4.0
 [![GPL Licence](https://cdn.jsdelivr.net/gh/MHuiG/imgbed/github/gpl.svg)](https://opensource.org/licenses/GPL-3.0/) 
 [![npm downloads](https://img.shields.io/npm/dm/hexo-next-minivaline.svg?style=flat-square)](https://www.npmjs.com/package/hexo-next-minivaline)
 
@@ -12,7 +11,7 @@ Get more information about [MiniValine](https://github.com/MiniValine/MiniValine
 ## Installation
 
 ``` bash
-npm install hexo-next-minivaline@3 --save
+npm install hexo-next-minivaline@4 --save
 ```
 
 > [Use Latest release](https://github.com/MiniValine/hexo-next-minivaline/releases/latest)

@@ -1,6 +1,6 @@
 {
   "name": "hexo-next-minivaline",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "description": "A MiniValine plugin for Hexo NexT theme.",
   "main": "index.js",
   "scripts": {
