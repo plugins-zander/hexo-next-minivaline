@@ -12,16 +12,19 @@ Get more information about [MiniValine](https://github.com/MiniValine/MiniValine
 
 ``` bash
 npm install hexo-next-minivaline@4 --save
+# Latest Click here: https://www.npmjs.com/package/hexo-next-minivaline?activeTab=versions
+# Beta: npm install --save  git+https://github.com/MiniValine/hexo-next-minivaline.git#master
 ```
 
-> [Use Latest release](https://github.com/MiniValine/hexo-next-minivaline/releases/latest)
-> or Beta `npm install --save  git+https://github.com/MiniValine/hexo-next-minivaline.git#master `
+
 
 ## Configuration
 
-In **Hexo** `_config.yml`:
+### Where
 
-> More Options https://github.com/MiniValine/MiniValine#options
++ In **Hexo** `_config.yml` , Not theme `_config.yml`
+
+### How
 
 ```yml
 minivaline:
@@ -32,7 +35,6 @@ minivaline:
   placeholder: Write a Comment # Comment box placeholder
   math: true # Support MathJax.
   md: true # Support Markdown.
-  enableQQ: false # Enable QQ avatar API.
   NoRecordIP: false # Do not record commenter IP.
   maxNest: 6 # Sub-comment maximum nesting depth.
   pageSize: 6 # Pagination size.
@@ -66,18 +68,66 @@ minivaline:
   cdn: https://cdn.jsdelivr.net/npm/minivaline@4/dist/MiniValine.min.js
 ```
 
-- `cdn` CDN of the required files. Leave it blank if you want to directly load from server side.
+### Options
 
-## **[MiniValine FAQs](https://github.com/MiniValine/MiniValine/blob/master/.github/FAQ.md)**
+| Config options                                               | hexo-next-minivaline@version | MiniValine support@version | Detail                                                       |
+| ------------------------------------------------------------ | ---------------------------- | -------------------------- | ------------------------------------------------------------ |
+| enable                                                       | Y@v4                         | N@v4.x                     | Tell hexo enable minivaline                                  |
+| cdn                                                          | Y@v4                         | N@v4.x                     | `cdn` CDN of the required files. Leave it blank if you want to directly load from server side. |
+| el                                                           | N@v4                         | Y@v4.x                     | Which has been installed before                              |
+| pathname                                                     | N@v4                         | Y@v4.x                     | Which has been installed before.                             |
+| [MiniValine Options](https://minivaline.js.org/docs/en/#/Options) <br />Except **el** and **pathname** | Y@v4                         | Y@v4.x                     | Both Support                                                 |
+|                                                              |                              |                            |                                                              |
+
+
+
+
+
+## FAQ
+
+### MiniValine
+
++ <https://minivaline.js.org/docs/en/#/FAQ>
+
+### hexo-next-minivaline
+
+#### I had add it in config, but it built without minivaline?
+
++ Add it in **hexo** `_config.yml`, but not Next **theme** `_config.yml`
++ Some config option, which is important ,eg appkey or appid,  is blank.
++ Try use the Latest [hexo-next-minivaline](https://www.npmjs.com/package/hexo-next-minivaline?activeTab=versions) and [Latest hexo-theme-next](https://github.com/next-theme/hexo-theme-next/releases) please.
+
+#### Support enableQQ?
+
++ Try See [CHANGELOG](https://minivaline.js.org/docs/en/#/CHANGELOG) or [Options](https://minivaline.js.org/docs/en/#/Options) , Some plug-in configurations may not be compatible downward
+
+#### Default MiniValine version
+
+> you can use cdn config above to choose MiniValine version, or the following default
+
+| hexo-next-minivaline   version | MiniValine  default version |
+| ------------------------------ | --------------------------- |
+| 4.0                            | 4                           |
+|                                |                             |
+|                                |                             |
+
+
 
 ## Feedback
 
-* Visit the [AWESOME MiniValine](https://github.com/MiniValine/AWESOME-MiniValine) list to share plugins and tutorials with other users.
 * Report a bug in [GitHub Issues][issues-bug-url].
-* [Add or improve translation](https://crowdin.com/project/minivaline) in few seconds.
 * Request a new feature on [GitHub][issues-feat-url].
-* Join our [Gitter][gitter-url] chats.
 * Vote for [popular feature requests][feat-req-vote-url].
+* Join our [Gitter][gitter-url] chats.
+
+
+
+## More 
+
++ Visit the [AWESOME MiniValine](https://github.com/MiniValine/AWESOME-MiniValine) list to share plugins and tutorials with other users.
++ [Add or improve translation](https://crowdin.com/project/minivaline) in few seconds.
+
+
 
 
 ## License

@@ -13,7 +13,9 @@ loadComments(document.querySelector('#minivaline-comments'), function(){
 			pathname: '/{{ page.path }}',
 			appId: '{{ config.minivaline.appid }}',
 			appKey: '{{ config.minivaline.appkey }}',
+			{%- if config.minivaline.placeholder %}
 			mode: '{{ config.minivaline.mode }}',
+			{%- endif %}
 			{%- if config.minivaline.placeholder %}
 			placeholder: '{{ config.minivaline.placeholder }}',
 			{%- endif %}
@@ -64,9 +66,6 @@ loadComments(document.querySelector('#minivaline-comments'), function(){
 			{%- endif %}
 			{%- if config.minivaline.closeUA %}
 			closeUA: {{ config.minivaline.closeUA }},
-			{%- endif %}
-			{%- if config.minivaline.enableQQ %}
-			enableQQ: {{ config.minivaline.enableQQ }},
 			{%- endif %}
 			{%- if config.minivaline.NoRecordIP %}
 			NoRecordIP: {{ config.minivaline.NoRecordIP }},
