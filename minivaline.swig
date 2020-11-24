@@ -3,7 +3,7 @@
 {%- if config.minivaline.cdn %}
 {%- set minivaline_uri = config.minivaline.cdn %}
 {%- elseif config.minivaline.mversion %}
-{%- set minivaline_uri = 'https://cdn.jsdelivr.net/npm/minivaline@'+'{{ config.minivaline.mversion }}'+'/dist/MiniValine.min.js' %}
+{%- set minivaline_uri = 'https://cdn.jsdelivr.net/npm/minivaline@' + config.minivaline.mversion + '/dist/MiniValine.min.js' %}
 {%- else %}
 {%- set minivaline_uri = 'https://cdn.jsdelivr.net/npm/minivaline@latest/dist/MiniValine.min.js' %}
 {%- endif %}

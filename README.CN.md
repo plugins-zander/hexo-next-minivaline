@@ -2,13 +2,13 @@
 [![GPL Licence](https://cdn.jsdelivr.net/gh/MHuiG/imgbed/github/gpl.svg)](https://opensource.org/licenses/GPL-3.0/) 
 [![npm downloads](https://img.shields.io/npm/dm/hexo-next-minivaline.svg?style=flat-square)](https://www.npmjs.com/package/hexo-next-minivaline)
 
->A MiniValine plugin for Hexo NexT theme.  [中文](README.CN.md)
+>Hexo NexT 主题的一个MiniValine插件.  [English](README.md)
 ------------------------------
-## Introduction
+## 简介
 
-Get more information about [MiniValine](https://github.com/MiniValine/MiniValine)
+更多信息请看 [MiniValine](https://github.com/MiniValine/MiniValine)
 
-## Installation
+## 安装
 
 ``` bash
 npm install hexo-next-minivaline@latest --save
@@ -16,13 +16,15 @@ npm install hexo-next-minivaline@latest --save
 
 
 
-## Configuration
+## 配置
 
-### Where
+### 配置在哪
+
++ 配置在hexo的配置里面，而不是主题的配置里面
 
 + In **Hexo** `_config.yml` , Not theme `_config.yml`
 
-### How
+### 怎么配置
 
 ```yml
 minivaline:
@@ -67,16 +69,16 @@ minivaline:
   cdn: https://cdn.jsdelivr.net/npm/minivaline@latest/dist/MiniValine.min.js
 ```
 
-### Options
+### 具体选项
 
-| Config options                                               | support | Detail                                                       |
-| ------------------------------------------------------------ | ------- | ------------------------------------------------------------ |
-| enable                                                       | Yes     | Tell hexo enable minivaline                                  |
-| cdn                                                          | Yes     | `cdn` CDN of the required files. Leave it blank if you want to directly load from server side. |
-| mversion                                                     | Yes     | choose [the version of MiniValine](https://www.npmjs.com/package/minivaline?activeTab=versions) you use,eg `5`or`4`or`4.3.0`or`latest`,default is `latest`, If you use option cdn this will be blocked. |
-| [mount option](https://minivaline.js.org/docs/en/#/Options?id=mount-options) | NOT     | Which has been installed before. Don't Add This.             |
-| [Base Options](https://minivaline.js.org/docs/en/#/Options?id=base-options) | Yes     | Support                                                      |
-| [Style Options](https://minivaline.js.org/docs/en/#/Options?id=style-options) | Yes     | Support                                                      |
+| 选项                                                         | 是否支持 | 详细信息                                                     |
+| ------------------------------------------------------------ | -------- | ------------------------------------------------------------ |
+| enable                                                       | Yes      | 告诉hexo开启minivaline                                       |
+| cdn                                                          | Yes      | `cdn` 是minivaline的cdn. 留空将会从npm的jsdelivr镜像加载官方最新`latest`版本 |
+| mversion                                                     | Yes      | 从 [这里选择 MiniValine 版本](https://www.npmjs.com/package/minivaline?activeTab=versions) ,如`5`或`4`或`4.3.0`或`latest`,默认是 `latest`, 注意如果上面选择cdn，那么这个版本选择不起作用，因为你选择哪个cdn文件相当于选择版本了 |
+| [mount option](https://minivaline.js.org/docs/en/#/Options?id=mount-options) | NOT      | Which has been installed before. Don't Add This.             |
+| [Base Options](https://minivaline.js.org/docs/en/#/Options?id=base-options) | Yes      | 支持，注意看自己选择的minivaline版本是否支持                 |
+| [Style Options](https://minivaline.js.org/docs/en/#/Options?id=style-options) | Yes      | 支持                                                         |
 
 
 
@@ -88,16 +90,17 @@ minivaline:
 
 ### hexo-next-minivaline
 
-#### I had add it in config, but it built without minivaline?
+#### 添加配置了，没有加载?
 
-+ set `enable: true`
-+ Note whether the option name case is uppercase or lowercase.
-+ Add it in **hexo** `_config.yml`, but not Next **theme** `_config.yml`
-+ Some config option may be wrong. 
-+ Try use the Latest [hexo-next-minivaline](https://www.npmjs.com/package/hexo-next-minivaline?activeTab=versions) and [Latest hexo-theme-next](https://github.com/next-theme/hexo-theme-next/releases) please.
++ 是否开启了`  enable: true`
++ 选项注意大小写，只有appid和appkey为了兼容以前版本支持小写，其余都是区分大小写的
++ 在hexo里面添加配置，不是在主题里面添加配置
++ 一些选项是不是配置错了
++ 试试最新版 [hexo-next-minivaline](https://www.npmjs.com/package/hexo-next-minivaline?activeTab=versions) and [Latest hexo-theme-next](https://github.com/next-theme/hexo-theme-next/releases) please.
 
-#### Support enableQQ?
+#### 支持enableQQ?
 
++ 不太安全，不建议添加
 + Try See [CHANGELOG](https://minivaline.js.org/docs/en/#/CHANGELOG) or [Options](https://minivaline.js.org/docs/en/#/Options) , Some plug-in configurations may not be compatible downward
 
 
