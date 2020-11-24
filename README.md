@@ -1,4 +1,4 @@
-# Hexo Next MiniValine Version 4.0
+# Hexo Next MiniValine Version 5.0
 [![GPL Licence](https://cdn.jsdelivr.net/gh/MHuiG/imgbed/github/gpl.svg)](https://opensource.org/licenses/GPL-3.0/) 
 [![npm downloads](https://img.shields.io/npm/dm/hexo-next-minivaline.svg?style=flat-square)](https://www.npmjs.com/package/hexo-next-minivaline)
 
@@ -11,9 +11,7 @@ Get more information about [MiniValine](https://github.com/MiniValine/MiniValine
 ## Installation
 
 ``` bash
-npm install hexo-next-minivaline@4 --save
-# Latest Click here: https://www.npmjs.com/package/hexo-next-minivaline?activeTab=versions
-# Beta: npm install --save  git+https://github.com/MiniValine/hexo-next-minivaline.git#master
+npm install hexo-next-minivaline@latest --save
 ```
 
 
@@ -29,6 +27,7 @@ npm install hexo-next-minivaline@4 --save
 ```yml
 minivaline:
   enable: true
+  mversion: latest
   appid: zhM0AOiqle17oPoE84CoYw1e-gzGzoHsz # Your leancloud application appid
   appkey: itmzT1JbXfAjVwMqDhGPzU45 # Your leancloud application appkey
   mode: DesertsP # DesertsP or xCss
@@ -65,21 +64,19 @@ minivaline:
     - https://cdn.jsdelivr.net/gh/MiniValine/twemoji@latest
     - https://cdn.jsdelivr.net/gh/MiniValine/weibo@latest
   lazyload: false
-  cdn: https://cdn.jsdelivr.net/npm/minivaline@4/dist/MiniValine.min.js
+  cdn: https://cdn.jsdelivr.net/npm/minivaline@latest/dist/MiniValine.min.js
 ```
 
 ### Options
 
-| Config options                                               | hexo-next-minivaline@version | MiniValine support@version | Detail                                                       |
-| ------------------------------------------------------------ | ---------------------------- | -------------------------- | ------------------------------------------------------------ |
-| enable                                                       | Y@v4                         | N@v4.x                     | Tell hexo enable minivaline                                  |
-| cdn                                                          | Y@v4                         | N@v4.x                     | `cdn` CDN of the required files. Leave it blank if you want to directly load from server side. |
-| el                                                           | N@v4                         | Y@v4.x                     | Which has been installed before                              |
-| pathname                                                     | N@v4                         | Y@v4.x                     | Which has been installed before.                             |
-| [MiniValine Options](https://minivaline.js.org/docs/en/#/Options) <br />Except **el** and **pathname** | Y@v4                         | Y@v4.x                     | Both Support                                                 |
-|                                                              |                              |                            |                                                              |
-
-
+| Config options                                               | support | Detail                                                       |
+| ------------------------------------------------------------ | ------- | ------------------------------------------------------------ |
+| enable                                                       | Yes     | Tell hexo enable minivaline                                  |
+| cdn                                                          | Yes     | `cdn` CDN of the required files. Leave it blank if you want to directly load from server side. |
+| mversion                                                     | Yes     | choose [the version of MiniValine](https://www.npmjs.com/package/minivaline?activeTab=versions) you use,eg `5`or`4`or`4.3.0`or`latest`,default is `latest`, If you use option cdn this will be blocked. |
+| [mount option](https://minivaline.js.org/docs/en/#/Options?id=mount-options) | NOT     | Which has been installed before. Don't Add This.             |
+| [Base Options](https://minivaline.js.org/docs/en/#/Options?id=base-options) | Yes     | Support                                                      |
+| [Style Options](https://minivaline.js.org/docs/en/#/Options?id=style-options) | Yes     | Support                                                      |
 
 
 
@@ -93,6 +90,7 @@ minivaline:
 
 #### I had add it in config, but it built without minivaline?
 
++ Note whether the option name case is uppercase or lowercase.
 + Add it in **hexo** `_config.yml`, but not Next **theme** `_config.yml`
 + Some config option, which is important ,eg appkey or appid,  is blank.
 + Try use the Latest [hexo-next-minivaline](https://www.npmjs.com/package/hexo-next-minivaline?activeTab=versions) and [Latest hexo-theme-next](https://github.com/next-theme/hexo-theme-next/releases) please.
@@ -100,16 +98,6 @@ minivaline:
 #### Support enableQQ?
 
 + Try See [CHANGELOG](https://minivaline.js.org/docs/en/#/CHANGELOG) or [Options](https://minivaline.js.org/docs/en/#/Options) , Some plug-in configurations may not be compatible downward
-
-#### Default MiniValine version
-
-> you can use cdn config above to choose MiniValine version, or the following default
-
-| hexo-next-minivaline   version | MiniValine  default version |
-| ------------------------------ | --------------------------- |
-| 4.0                            | 4                           |
-|                                |                             |
-|                                |                             |
 
 
 

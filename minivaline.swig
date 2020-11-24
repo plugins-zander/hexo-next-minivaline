@@ -1,9 +1,12 @@
 {%- if page.comments %}
-{%- set minivaline_uri = config.minivaline.cdn or 'https://cdn.jsdelivr.net/npm/minivaline@4/dist/MiniValine.min.js' %}
-{%- set emoticonUrl = config.minivaline.emoticonUrl %}
-{%- set tagMeta = config.minivaline.tagMeta %}
-{%- set master = config.minivaline.master %}
-{%- set friends = config.minivaline.friends %}
+
+{%- if config.minivaline.cdn %}
+{%- set minivaline_uri = config.minivaline.cdn %}
+{%- elseif config.minivaline.mversion %}
+{%- set minivaline_uri = 'https://cdn.jsdelivr.net/npm/minivaline@'+'{{ config.minivaline.mversion }}'+'/dist/MiniValine.min.js' %}
+{%- else %}
+{%- set minivaline_uri = 'https://cdn.jsdelivr.net/npm/minivaline@latest/dist/MiniValine.min.js' %}
+{%- endif %}
 
 <script>
 loadComments(document.querySelector('#minivaline-comments'), function(){
@@ -11,9 +14,17 @@ loadComments(document.querySelector('#minivaline-comments'), function(){
 		new MiniValine({
 			el: '#minivaline-comments',
 			pathname: '/{{ page.path }}',
+			{%- if config.minivaline.appid %}
 			appId: '{{ config.minivaline.appid }}',
+			{%- elseif config.minivaline.appId %}
+			appId: '{{ config.minivaline.appId }}',
+			{%- endif %}
+			{%- if config.minivaline.appkey %}
 			appKey: '{{ config.minivaline.appkey }}',
-			{%- if config.minivaline.placeholder %}
+			{%- elseif config.minivaline.appKey %}
+			appKey: '{{ config.minivaline.appKey }}',
+			{%- endif %}
+			{%- if config.minivaline.mode %}
 			mode: '{{ config.minivaline.mode }}',
 			{%- endif %}
 			{%- if config.minivaline.placeholder %}
@@ -81,6 +92,12 @@ loadComments(document.querySelector('#minivaline-comments'), function(){
 			{%- endif %}
 			{%- if config.minivaline.emoticonUrl %}
 			emoticonUrl: [{%- for i in emoticonUrl %}"{{ i }}",{%- endfor %}],
+			{%- endif %}
+			{%- if config.minivaline.enableQQ %}
+			enableQQ: '{{ config.minivaline.enableQQ }}',
+			{%- endif %}
+			{%- if config.minivaline.backend %}
+			backend: '{{ config.minivaline.backend }}',
 			{%- endif %}
 		});
 	}, window.MiniValine);
