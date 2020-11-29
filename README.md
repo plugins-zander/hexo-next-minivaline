@@ -28,8 +28,8 @@ npm install hexo-next-minivaline@latest --save
 minivaline:
   enable: true
   mversion: latest
-  appid: zhM0AOiqle17oPoE84CoYw1e-gzGzoHsz # Your leancloud application appid
-  appkey: itmzT1JbXfAjVwMqDhGPzU45 # Your leancloud application appkey
+  appId: zhM0AOiqle17oPoE84CoYw1e-gzGzoHsz # Your leancloud application appid
+  appKey: itmzT1JbXfAjVwMqDhGPzU45 # Your leancloud application appkey
   mode: DesertsP # DesertsP or xCss demo -> https://minivaline.js.org/demo.html
   # Pay attention array, eg following, use yaml style NOT json in hexo-next-minivaline
   emoticonUrl:
@@ -47,14 +47,14 @@ minivaline:
 
 ### Options
 
-| Config options                                               | Support | Default  | option                                                       | Detail                                                       |
-| ------------------------------------------------------------ | ------- | -------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| enable                                                       | Yes     |          |                                                              | Tell hexo enable minivaline                                  |
-| cdn                                                          | Yes     | null     |                                                              | `cdn` CDN of the required files. Leave it blank if you want to directly load from server side. |
-| mversion                                                     | Yes     | `latest` | `Leave blank` or`num version` eg`4.3.0`,[detail](https://www.npmjs.com/package/minivaline?activeTab=versions) | If you use option cdn this will be blocked.More question in FAQ following. |
-| [mount option](https://minivaline.js.org/docs/en/#/Options?id=mount-options) | NO      |          |                                                              | Which has been installed before. Don't Add This.             |
-| [Base Options](https://minivaline.js.org/docs/en/#/Options?id=base-options) | Yes     |          |                                                              | Support                                                      |
-| [Style Options](https://minivaline.js.org/docs/en/#/Options?id=style-options) | Yes     |          |                                                              | Support                                                      |
+| Config options                                               | Support | Default              | option                                                       | Detail                                                       |
+| ------------------------------------------------------------ | ------- | -------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| enable                                                       | Yes     | null                 | `true` or `false`                                            | Tell hexo enable minivaline                                  |
+| cdn                                                          | Yes     | null                 | `Leave blank`or `Your minivaline cdn address`                | `cdn` CDN of the required files. Leave it blank if you want to directly load from server side. |
+| mversion                                                     | Yes     | `latest`             | `Leave blank` or`num version` eg`4.3.0`,[detail](https://www.npmjs.com/package/minivaline?activeTab=versions) | If you use option cdn this will be blocked.More question in FAQ following. |
+| [mount option](https://minivaline.js.org/docs/en/#/Options?id=mount-options) | NO      | -                    | -                                                            | Which has been installed before. Don't Add This.             |
+| [Base Options](https://minivaline.js.org/docs/en/#/Options?id=base-options) | Yes     | same with minivaline | same with minivaline                                         | Support                                                      |
+| [Style Options](https://minivaline.js.org/docs/en/#/Options?id=style-options) | Yes     | same with minivaline | same with minivaline                                         | Support                                                      |
 
 
 
@@ -87,8 +87,9 @@ minivaline:
     + means the latest version release on [npm](https://www.npmjs.com/package/minivaline?activeTab=versions) ,include `alpha-version`eg`5.0.0-alpha.3`,may not you mean.
   + one number eg`4`
     + means the lastet version start with 4, eg`4.3.0`
-  + [Code here](https://github.com/MiniValine/hexo-next-minivaline/blob/master/minivaline.swig#L3), you can try `https://cdn.jsdelivr.net/npm/minivaline@Your-mversion-value/dist/MiniValine.min.js` before using.
-
+  + [Code here](https://github.com/MiniValine/hexo-next-minivaline/blob/master/minivaline.swig#L3),
+  + you can try `https://cdn.jsdelivr.net/npm/minivaline@Your-mversion-value/dist/MiniValine.min.js` before using.
+  
 + Is there something wrong with option?[detail](https://minivaline.js.org/docs/en/#/Options)
 + May be something wrong with minivaline, feedback [minivaline](https://github.com/MiniValine/MiniValine).
 
