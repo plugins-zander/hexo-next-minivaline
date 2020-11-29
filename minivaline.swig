@@ -12,9 +12,9 @@
 loadComments(document.querySelector('#minivaline-comments'), function(){
 	getScript('{{ minivaline_uri }}', function(){
 		new MiniValine(Object.assign({{ config.minivaline | safedump }}, {
-          el: '#minivaline-comments',
-          pathname: {{ url_for(page.path) | replace(r/index\.html$/, '') | safedump }},
-      }));
+			el: '#minivaline-comments',
+			pathname: {{ url_for(page.path) | replace(r/index\.html$/, '') | safedump }},
+		}));
 	}, window.MiniValine);
 });
 function getScript(url, callback, condition) {
