@@ -69,7 +69,8 @@ minivaline:
 #### I had add it in config, but it built without minivaline?
 
 + set `enable: true`
-+ Note whether the option name case is uppercase or lowercase.
++ Note whether the option name case is uppercase or lowercase. 
+  + **Especially `appId` and  `appKey`, Not ~~`appid` and `appkey`~~**
 + Add it in **hexo** `_config.yml`, but not Next **theme** `_config.yml`
 + Some config option may be wrong. 
 + Try use the Latest [hexo-next-minivaline](https://www.npmjs.com/package/hexo-next-minivaline?activeTab=versions) and [Latest hexo-theme-next](https://github.com/next-theme/hexo-theme-next/releases) please.

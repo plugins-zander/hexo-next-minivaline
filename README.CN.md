@@ -71,7 +71,8 @@ minivaline:
 #### 添加配置了，没有加载?
 
 + 是否开启了`  enable: true`
-+ 选项注意大小写，只有appid和appkey为了兼容以前版本支持小写，其余都是区分大小写的
++ 选项注意大小写
+  + 尤其是`appId`和`appKey`都是区分大小写的，**不再兼容**以前的`appid`和`appkey`
 + 在hexo里面添加配置，不是在主题里面添加配置
 + 一些选项是不是配置错了
 + 试试最新版 [hexo-next-minivaline](https://www.npmjs.com/package/hexo-next-minivaline?activeTab=versions) and [Latest hexo-theme-next](https://github.com/next-theme/hexo-theme-next/releases) please.
