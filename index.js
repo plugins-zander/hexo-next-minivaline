@@ -12,6 +12,6 @@ hexo.extend.filter.register('theme_inject', injects => {
 
   injects.comment.raw('minivaline', '<div class="comments" id="minivaline-comments"></div>', {}, {cache: true});
 
-  injects.bodyEnd.file('minivaline', path.join(__dirname, 'minivaline.swig'));
+  injects.bodyEnd.file('minivaline', path.join(__dirname, 'minivaline.njk'));
 
 });
